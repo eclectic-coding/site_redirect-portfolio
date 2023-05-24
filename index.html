@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="refresh" content="7; url='https://eclecticcoding.com'" />
+        <title>Redirecting to new site</title>
+    </head>
+    <style>
+        body {
+            background-color: #f3f3f3;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            text-align: center;
+            padding-top: 20%;
+        }
+
+        #seconds {
+            background-color: white;
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+            border-radius: 50%;
+        }
+    </style>
+    <body>
+        <main>
+            <p>You will be redirected to my new site at <a href="https://eclecticcoding.com">Eclectic Coding</a> in
+                <span id="seconds">10</span> seconds!</p>
+        </main>
+
+        <script>
+            timeLeft = 10;
+
+            function countdown() {
+                timeLeft--;
+                document.getElementById("seconds").innerHTML = String(timeLeft);
+                if (timeLeft > 0) {
+                    setTimeout(countdown, 1000);
+                }
+            }
+
+            setTimeout(countdown, 1000);
+        </script>
+    </body>
+</html>
