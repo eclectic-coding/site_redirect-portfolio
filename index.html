@@ -28,18 +28,7 @@
                 <span id="seconds">10</span> seconds!</p>
         </main>
 
-        <script>
-            timeLeft = 10;
-
-            function countdown() {
-                timeLeft--;
-                document.getElementById("seconds").innerHTML = String(timeLeft);
-                if (timeLeft > 0) {
-                    setTimeout(countdown, 1000);
-                }
-            }
-
-            setTimeout(countdown, 1000);
-        </script>
+        <script src="index.js"></script>
+        <script src="analytics.js"></script>
     </body>
 </html>

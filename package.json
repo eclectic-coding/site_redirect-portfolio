@@ -1,0 +1,11 @@
+{
+  "name": "site_redirect-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@me.github.com:eclectic-coding/site_redirect-portfolio.git",
+  "author": "Chuck <chuck@eclecticsaddlebag.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.0.1"
+  }
+}
